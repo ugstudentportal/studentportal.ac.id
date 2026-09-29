@@ -1,0 +1,252 @@
+<!-- ================= krs.html ================= -->
+ 
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KRS Online - UG StudentSite</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ================= SIDEBAR ================= -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+<img src="IMG/logo-gunadarma.png" class="logo-img">
+
+<div class="logo-text">
+
+<div class="title">
+UG StudentSite
+</div>
+
+<small>
+Portal Mahasiswa
+</small>
+
+</div>
+
+</div>
+
+<div class="menu">
+
+<a href="dashboard.html">
+<i class="bi bi-grid"></i>
+<span>
+Dashboard
+</span>
+</a>
+
+<div class="menu-title">
+AKUN
+</div>
+
+<a href="profil.html">
+<i class="bi bi-person"></i>
+<span>
+Profil Saya
+</span>
+</a>
+
+<a href="kartu-mahasiswa.html">
+<i class="bi bi-card-heading"></i>
+<span>
+Kartu Mahasiswa
+</span>
+</a>
+
+<a href="akun-microsoft.html">
+<i class="bi bi-microsoft"></i>
+<span>
+Akun Microsoft
+</span>
+</a>
+
+<div class="menu-title">
+AKADEMIK
+</div>
+
+<a href="sistem-akademik.html">
+<i class="bi bi-book"></i>
+<span>
+Sistem Akademik
+</span>
+</a>
+
+<a href="krs.html" class="active">
+<i class="bi bi-journal"></i>
+<span>
+KRS
+</span>
+</a>
+
+
+<a href="daftar-sidang.html">
+<i class="bi bi-pencil"></i>
+<span>
+Daftar Sidang
+</span>
+</a>
+
+<a href="daftar-ulang.html">
+<i class="bi bi-person-plus"></i>
+<span>
+Daftar Ulang
+</span>
+</a>
+
+<div class="menu-title">
+LAYANAN & ADMINISTRASI
+</div>
+
+<a href="surat-keterangan.html">
+<i class="bi bi-file-text"></i>
+<span>
+Surat Keterangan
+</span>
+</a>
+
+<a>
+<i class="bi bi-bookshelf"></i>
+<span>
+Perpustakaan
+</span>
+</a>
+
+<a>
+<i class="bi bi-mortarboard"></i>
+<span>
+Daftar Wisuda
+</span>
+</a>
+
+<a href="blanko-pembayaran.html">
+
+<i class="bi bi-wallet2"></i>
+
+<span>
+Blanko Pembayaran
+</span>
+
+</a>
+
+
+
+
+</div>
+
+<!-- LOGOUT -->
+<div class="logout-area">
+
+<div class="logout" onclick="logoutUser()">
+<i class="bi bi-box-arrow-right"></i>
+<span>
+Keluar
+</span>
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= CONTENT ================= -->
+
+<div class="content">
+
+<!-- TOPBAR SAMA DENGAN DASHBOARD -->
+
+<div class="topbar">
+
+<div>
+KRS Online
+</div>
+
+<div class="profile-menu">
+
+<div class="profile" onclick="toggleProfileMenu()">
+
+<div class="profile-text">
+<b>
+FATIKAH PUSPA INDAH
+</b>
+
+<small>
+10122481
+</small>
+</div>
+
+<div class="avatar">
+FP
+</div>
+
+<i class="bi bi-chevron-down profile-arrow" id="profileArrow"></i>
+
+</div>
+
+<div class="profile-dropdown" id="profileDropdown">
+
+<div class="dropdown-item">
+<i class="bi bi-lock"></i>
+<span>
+Ganti Password
+</span>
+</div>
+
+<div class="dropdown-item logout-item" onclick="logoutUser()">
+<i class="bi bi-box-arrow-right"></i>
+<span>
+Keluar
+</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= ISI KRS ================= -->
+
+<div class="container-kartu">
+
+<h1>
+Pengisian KRS Online
+</h1>
+
+<p class="subtitle">
+Isi Kartu Rencana Studi Anda
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- SCRIPT -->
+<script src="script.js"></script>
+
+<script>
+function toggleProfileMenu(){
+const menu=document.getElementById("profileDropdown");
+const arrow=document.getElementById("profileArrow");
+menu.classList.toggle("show");
+arrow.classList.toggle("rotate");
+}
+</script>
+
+</body>
+</html>
